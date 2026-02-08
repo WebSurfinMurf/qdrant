@@ -16,8 +16,8 @@ echo "=== Qdrant: Creating snapshots of all collections ==="
 
 # Check if Qdrant API key is required
 QDRANT_API_KEY=""
-if [ -f /home/administrator/secrets/qdrant.env ]; then
-    source /home/administrator/secrets/qdrant.env 2>/dev/null
+if [ -f /home/administrator/projects/secrets/qdrant.env ]; then
+    source /home/administrator/projects/secrets/qdrant.env 2>/dev/null
 fi
 
 # Get Qdrant container IP (use localhost since we're on the same host)
